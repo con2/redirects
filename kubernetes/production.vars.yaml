@@ -1,0 +1,67 @@
+redirects:
+  - target: https://2020.hitpoint.tracon.fi
+    hosts:
+      - hitpoint.tracon.fi
+      - www.hitpoint.tracon.fi
+
+  - target: https://atlasso.tracon.fi/crowd?next=https://confluence.tracon.fi/display/HITPOINT2020
+    hosts:
+      - wiki.hitpoint.tracon.fi
+
+  - target: https://atlasso.tracon.fi/crowd?next=https%3A%2F%2Fjira.tracon.fi%2Fsecure%2FCreateIssue.jspa%3Fpid%3D10302%26issuetype%3D10100
+    hosts:
+      - kulukorvaus.ry.tracon.fi
+
+  - target: https://atlasso.tracon.fi/crowd?next=https%3A%2F%2Fjira.tracon.fi%2Fsecure%2FCreateIssue.jspa%3Fpid%3D11200%26issuetype%3D10100
+    hosts:
+      - kulukorvaus.hitpoint.tracon.fi
+
+  - target: https://atlasso.tracon.fi/crowd?next=https%3A%2F%2Fjira.tracon.fi%2Fsecure%2FCreateIssue.jspa%3Fpid%3D11300%26issuetype%3D10100
+    hosts:
+      - kulukorvaus.tracon.fi
+
+  - target: https://con2.fi
+    hosts:
+      - qb.con2.fi
+      - qb1.con2.fi
+      - qb2.con2.fi
+      - qb3.con2.fi
+      - www.con2.fi
+
+  - target: https://conikuvat.fi
+    hosts:
+      - conkuvat.fi
+      - www.conikuvat.fi
+      - www.conkuvat.fi
+      - uusi.kuvat.aniki.fi
+
+  - target: https://infokala.tracon.fi
+    hosts:
+      - infoloki.tracon.fi
+
+  - target: https://infotv.tracon.fi
+    hosts:
+      - info-tv.tracon.fi
+
+  - target: https://larppikuvat.fi
+    hosts:
+      - larpkuvat.fi
+      - larp-kuvat.fi
+      - www.larppikuvat.fi
+      - www.larpkuvat.fi
+      - www.larp-kuvat.fi
+
+  - target: https://kompassi.eu
+    hosts:
+      - www.kompassi.eu
+      - kompassi.tracon.fi
+
+  - target: https://kompassi.eu/profile/reservations
+    hosts:
+      - paikkaliput.tracon.fi
+
+  - target: https://kompassi.eu/events/tracon2020/programme
+    hosts:
+      - ohjelma.tracon.fi
+
+ingress_letsencrypt_enabled: true

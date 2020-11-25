@@ -1,0 +1,14 @@
+redirects:
+  - name: old.example.com
+    hosts:
+      - old.example.com
+    target: https://new.example.com
+
+ingress_letsencrypt_enabled: false
+
+ingress_annotations: !If
+  test: !Var ingress_letsencrypt_enabled
+  then:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+    # No SSL redirect: we assume targets use SSL anyway
+    # nginx.ingress.kubernetes.io/ssl-redirect: "true"

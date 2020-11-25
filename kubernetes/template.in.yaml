@@ -1,0 +1,5 @@
+!Loop
+  over: !Var redirects
+  as: redirect
+  as_documents: true
+  template: !Include ingress.in.yaml
