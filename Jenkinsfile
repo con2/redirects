@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage("Deploy") {
       steps {
-        sh "emskaffolden -E production -- run -n infokala"
+        sh "emskaffolden -E production -- run -n redirects"
       }
     }
   }
