@@ -26,6 +26,7 @@ redirects:
       - qb1.con2.fi
       - qb2.con2.fi
       - qb3.con2.fi
+      - qb4.con2.fi
       - www.con2.fi
 
   - target: https://conikuvat.fi
