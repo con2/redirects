@@ -65,4 +65,4 @@ redirects:
     hosts:
       - ohjelma.tracon.fi
 
-ingress_letsencrypt_enabled: true
+ingress_letsencrypt_enabled: false
