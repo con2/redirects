@@ -1,4 +1,8 @@
 redirects:
+  - target: https://2020.tracon.fi
+    hosts:
+      - tracon.fi
+
   - target: https://2020.hitpoint.tracon.fi
     hosts:
       - hitpoint.tracon.fi
@@ -32,6 +36,7 @@ redirects:
   - target: https://conikuvat.fi
     hosts:
       - conkuvat.fi
+      - beta.conikuvat.fi
       - www.conikuvat.fi
       - www.conkuvat.fi
       - uusi.kuvat.aniki.fi
