@@ -36,13 +36,17 @@ redirects:
       - qb4.con2.fi
       - www.con2.fi
 
+  - target: https://con2.fi/concon
+    hosts:
+      - concon.nakkikone.org
+
   - target: https://conikuvat.fi
     hosts:
       - conkuvat.fi
       - beta.conikuvat.fi
       - www.conikuvat.fi
       - www.conkuvat.fi
-      # - uusi.kuvat.aniki.fi
+      - uusi.kuvat.aniki.fi
 
   - target: https://infokala.tracon.fi
     hosts:
