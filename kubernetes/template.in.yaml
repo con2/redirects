@@ -1,5 +1,7 @@
-!Loop
-  over: !Var redirects
-  as: redirect
-  as_documents: true
-  template: !Include ingress.in.yaml
+!Include configmap.in.yaml
+---
+!Include deployment.in.yaml
+---
+!Include service.in.yaml
+---
+!Include ingress.in.yaml

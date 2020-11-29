@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: redirects
+data: !Index
+  over: !Var redirects
+  as: redirect
+  by: !Format "{redirect.hosts[0]}.conf"
+  template: !With
+    vars:
+      server_name: !Join
+        items: !Lookup redirect.hosts
+        separator: " "
+    template: !Format |
+      server {{
+        listen 80;
+        server_name {server_name};
+        return 302 {redirect.target};
+      }}

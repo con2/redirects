@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx
+spec:
+  selector:
+    matchLabels:
+      stack: redirects
+      component: nginx
+  template:
+    metadata:
+      labels:
+        stack: redirects
+        component: nginx
+    spec:
+      enableServiceLinks: false
+      containers:
+        - name: nginx
+          image: nginx
+          securityContext:
+            readOnlyRootFilesystem: true
+            allowPrivilegeEscalation: false
+          ports:
+            - containerPort: 80
+          volumeMounts:
+            - mountPath: /etc/nginx/conf.d
+              name: config
+              readOnly: true
+            - mountPath: /var/cache/nginx
+              name: cache
+            - mountPath: /var/run
+              name: pids
+      volumes:
+        - name: config
+          configMap:
+            name: redirects
+        - name: cache
+          emptyDir: {}
+        - name: pids
+          emptyDir: {}

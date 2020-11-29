@@ -1,7 +1,10 @@
+ingress_letsencrypt_enabled: true
+
 redirects:
   - target: https://2020.tracon.fi
     hosts:
       - tracon.fi
+      - www.tracon.fi
 
   - target: https://2020.hitpoint.tracon.fi
     hosts:
@@ -39,7 +42,7 @@ redirects:
       - beta.conikuvat.fi
       - www.conikuvat.fi
       - www.conkuvat.fi
-      - uusi.kuvat.aniki.fi
+      # - uusi.kuvat.aniki.fi
 
   - target: https://infokala.tracon.fi
     hosts:
@@ -59,7 +62,7 @@ redirects:
 
   - target: https://kompassi.eu
     hosts:
-      - www.kompassi.eu
+      # - www.kompassi.eu
       - kompassi.tracon.fi
 
   - target: https://kompassi.eu/profile/reservations
@@ -69,5 +72,3 @@ redirects:
   - target: https://kompassi.eu/events/tracon2020/programme
     hosts:
       - ohjelma.tracon.fi
-
-ingress_letsencrypt_enabled: false

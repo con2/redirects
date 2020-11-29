@@ -1,25 +1,29 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: !Lookup redirect.hosts[0]
-  annotations: !Merge
-    - !Var ingress_annotations
-    - nginx.ingress.kubernetes.io/temporal-redirect: !Lookup redirect.target
+  name: redirects
+  annotations: !Var ingress_annotations
 spec:
   tls: !If
     test: !Var ingress_letsencrypt_enabled
     then:
-      - secretName: !Lookup redirect.hosts[0]
-        hosts: !Lookup redirect.hosts
+      - secretName: ingress-letsencrypt
+        hosts: !Concat,Loop
+          over: !Var redirects
+          as: redirect
+          template: !Lookup redirect.hosts
 
-  rules: !Loop
-    over: !Lookup redirect.hosts
-    as: ingress_public_hostname
-    template:
-      host: !Var ingress_public_hostname
-      http:
-        paths:
-          - path: /
-            backend:
-              serviceName: default-backend
-              servicePort: 80
+  rules: !Concat,Loop
+    over: !Var redirects
+    as: redirect
+    template: !Loop
+      over: !Lookup redirect.hosts
+      as: hostname
+      template:
+        host: !Var hostname
+        http:
+          paths:
+            - path: /
+              backend:
+                serviceName: nginx
+                servicePort: 80
