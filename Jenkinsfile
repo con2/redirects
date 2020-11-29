@@ -15,7 +15,7 @@ pipeline {
 
   post {
     always {
-      archiveArtifacts "build.json"
+      // archiveArtifacts "build.json"
       archiveArtifacts "kubernetes/template.compiled.yaml"
     }
   }
