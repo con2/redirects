@@ -3,7 +3,6 @@ pipeline {
 
   environment {
     PYTHONUNBUFFERED = "1"
-    SKAFFOLD_DEFAULT_REPO = "harbor.con2.fi/con2"
   }
 
   stages {
