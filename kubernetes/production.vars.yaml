@@ -76,3 +76,7 @@ redirects:
   - target: https://kompassi.eu/events/tracon2020/programme
     hosts:
       - ohjelma.tracon.fi
+
+  - target: https://traconfi.slack.com
+    hosts:
+      - slack.tracon.fi
