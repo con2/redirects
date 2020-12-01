@@ -48,6 +48,10 @@ redirects:
       - www.conkuvat.fi
       - uusi.kuvat.aniki.fi
 
+  - target: https://con2.fi
+    hosts:
+      - www.conit.fi
+
   - target: https://infokala.tracon.fi
     hosts:
       - infoloki.tracon.fi
