@@ -9,4 +9,4 @@ jobs:
       - uses: actions/checkout@v1
       - uses: con2/emskaffolden-action@main
         with:
-          args: deploy -E production -- -n redirects
+          args: -E production -- deploy -n redirects
