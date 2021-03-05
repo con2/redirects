@@ -4,9 +4,11 @@ on:
       - main
 jobs:
   deploy:
-    runs-on: self-hosted
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v1
+      - uses: azure/setup-kubectl@v1
       - uses: con2/emskaffolden-action@main
         with:
-          args: -E production -- deploy -n redirects
+          args: -E production
+      - run: kubectl apply -f kubernetes/template.compiled.yaml -n redirects
