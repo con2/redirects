@@ -10,14 +10,9 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: '3.x'      
-      - run: python3 -m pip install emskaffolden && emskaffolden -E production
-      - run: env
-      - uses: azure/k8s-set-context@v1
+      - uses: daisaru11/setup-cd-tools@v1
         with:
-          method: service-account    
-      - uses: Azure/k8s-deploy@v1.4
-        with:
-          namespace: redirects
-          manifests: |
-            kubernetes/template.compiled.yaml
-          kubectl-version: '1.20.4'
+          kubectl: '1.20.4'
+          skaffold: '1.20.0'         
+      - run: python3 -m pip install emskaffolden
+      - run: emskaffolden -E production -- deploy -n redirects
