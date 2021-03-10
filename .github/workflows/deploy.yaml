@@ -11,9 +11,10 @@ jobs:
         with:
           python-version: '3.x'      
       - run: python3 -m pip install emskaffolden && emskaffolden -E production
+      - run: env
       - uses: azure/k8s-set-context@v1
         with:
-          method: service-account      
+          method: service-account    
       - uses: Azure/k8s-deploy@v1.4
         with:
           namespace: redirects
