@@ -8,7 +8,5 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - uses: azure/setup-kubectl@v1
-      - uses: con2/emskaffolden-action@main
-        with:
-          args: -E production
+      - run: python3 -m pip install emskaffolden && emskaffolden -E production
       - run: kubectl apply -f kubernetes/template.compiled.yaml -n redirects
