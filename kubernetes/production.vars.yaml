@@ -11,9 +11,11 @@ redirects:
       - hitpoint.tracon.fi
       - www.hitpoint.tracon.fi
 
-  - target: https://animecon.fi
+  - target: https://conit.fi
     hosts:
+      - animecon.fi
       - www.animecon.fi
+      - www.conit.fi
 
   - target: https://atlasso.tracon.fi/crowd?next=https://confluence.tracon.fi/display/HITPOINT2020
     hosts:
@@ -51,10 +53,6 @@ redirects:
       - www.conikuvat.fi
       - www.conkuvat.fi
       - uusi.kuvat.aniki.fi
-
-  - target: https://con2.fi
-    hosts:
-      - www.conit.fi
 
   - target: https://infokala.tracon.fi
     hosts:
