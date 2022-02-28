@@ -1,7 +1,7 @@
 ingress_letsencrypt_enabled: true
 
 redirects:
-  - target: https://2021.tracon.fi
+  - target: https://2022.tracon.fi
     hosts:
       - tracon.fi
       - www.tracon.fi
