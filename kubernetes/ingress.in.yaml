@@ -4,6 +4,7 @@ metadata:
   name: redirects
   annotations: !Var ingress_annotations
 spec:
+  ingressClassName: !Var ingress_class_name
   tls: !If
     test: !Var ingress_letsencrypt_enabled
     then:

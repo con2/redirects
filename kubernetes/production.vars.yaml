@@ -86,3 +86,7 @@ redirects:
   - target: https://traconfi.slack.com
     hosts:
       - slack.tracon.fi
+
+  - target: https://wiki.tracon.fi/collection/traconin-tyovoimawiki-Oinc2anefS
+    hosts:
+      - tera.tracon.fi

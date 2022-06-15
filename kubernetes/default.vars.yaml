@@ -6,6 +6,7 @@ redirects:
 
 ingress_letsencrypt_enabled: false
 
+ingress_class_name: nginx
 ingress_annotations: !If
   test: !Var ingress_letsencrypt_enabled
   then:
