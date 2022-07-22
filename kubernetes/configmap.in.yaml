@@ -15,5 +15,5 @@ data: !Index
       server {{
         listen 80;
         server_name {server_name};
-        return 302 {redirect.target};
+        return 302 {redirect.target}$request_uri;
       }}
