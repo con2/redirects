@@ -79,7 +79,7 @@ redirects:
     hosts:
       - paikkaliput.tracon.fi
 
-  - target: https://kompassi.eu/events/tracon2020/programme
+  - target: https://kompassi.eu/events/tracon2022/programme
     hosts:
       - ohjelma.tracon.fi
 
