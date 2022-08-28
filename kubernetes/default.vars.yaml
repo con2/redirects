@@ -3,6 +3,7 @@ redirects:
     hosts:
       - old.example.com
     target: https://new.example.com
+    pass_path: true
 
 ingress_letsencrypt_enabled: false
 

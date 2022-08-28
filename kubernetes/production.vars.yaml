@@ -2,38 +2,46 @@ ingress_letsencrypt_enabled: true
 
 redirects:
   - target: https://2022.tracon.fi
+    pass_path: true
     hosts:
       - tracon.fi
       - www.tracon.fi
 
   - target: https://2020.hitpoint.tracon.fi
+    pass_path: true
     hosts:
       - hitpoint.tracon.fi
       - www.hitpoint.tracon.fi
 
   - target: https://conit.fi
+    pass_path: true
     hosts:
       - animecon.fi
       - www.animecon.fi
       - www.conit.fi
 
   - target: https://atlasso.tracon.fi/crowd?next=https://confluence.tracon.fi/display/HITPOINT2020
+    pass_path: false
     hosts:
       - wiki.hitpoint.tracon.fi
 
   - target: https://atlasso.tracon.fi/crowd?next=https%3A%2F%2Fjira.tracon.fi%2Fsecure%2FCreateIssue.jspa%3Fpid%3D10302%26issuetype%3D10100
+    pass_path: false
     hosts:
       - kulukorvaus.ry.tracon.fi
 
   - target: https://atlasso.tracon.fi/crowd?next=https%3A%2F%2Fjira.tracon.fi%2Fsecure%2FCreateIssue.jspa%3Fpid%3D11200%26issuetype%3D10100
+    pass_path: false
     hosts:
       - kulukorvaus.hitpoint.tracon.fi
 
   - target: https://atlasso.tracon.fi/crowd?next=https%3A%2F%2Fjira.tracon.fi%2Fsecure%2FCreateIssue.jspa%3Fpid%3D11500%26issuetype%3D10100
+    pass_path: false
     hosts:
       - kulukorvaus.tracon.fi
 
   - target: https://con2.fi
+    pass_path: true
     hosts:
       - qb.con2.fi
       - qb1.con2.fi
@@ -43,10 +51,12 @@ redirects:
       - www.con2.fi
 
   - target: https://con2.fi/concon
+    pass_path: true
     hosts:
       - concon.nakkikone.org
 
   - target: https://conikuvat.fi
+    pass_path: true
     hosts:
       - conkuvat.fi
       - beta.conikuvat.fi
@@ -55,14 +65,17 @@ redirects:
       - uusi.kuvat.aniki.fi
 
   - target: https://infokala.tracon.fi
+    pass_path: true
     hosts:
       - infoloki.tracon.fi
 
   - target: https://infotv.tracon.fi
+    pass_path: true
     hosts:
       - info-tv.tracon.fi
 
   - target: https://larppikuvat.fi
+    pass_path: true
     hosts:
       - larpkuvat.fi
       - larp-kuvat.fi
@@ -71,22 +84,27 @@ redirects:
       - www.larp-kuvat.fi
 
   - target: https://kompassi.eu
+    pass_path: true
     hosts:
       - www.kompassi.eu
       - kompassi.tracon.fi
 
   - target: https://kompassi.eu/profile/reservations
+    pass_path: true
     hosts:
       - paikkaliput.tracon.fi
 
   - target: https://kompassi.eu/events/tracon2022/programme
+    pass_path: true
     hosts:
       - ohjelma.tracon.fi
 
   - target: https://traconfi.slack.com
+    pass_path: true
     hosts:
       - slack.tracon.fi
 
   - target: https://wiki.tracon.fi/collection/traconin-tyovoimawiki-Oinc2anefS
+    pass_path: false
     hosts:
       - tera.tracon.fi

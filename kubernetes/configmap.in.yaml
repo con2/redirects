@@ -11,9 +11,17 @@ data: !Index
       server_name: !Join
         items: !Lookup redirect.hosts
         separator: " "
-    template: !Format |
-      server {{
-        listen 80;
-        server_name {server_name};
-        return 302 {redirect.target}$request_uri;
-      }}
+    template: !If
+      test: !Lookup redirect.pass_path
+      then: !Format |
+        server {{
+          listen 80;
+          server_name {server_name};
+          return 302 {redirect.target}$request_uri;
+        }}
+      else: !Format |
+        server {{
+          listen 80;
+          server_name {server_name};
+          return 302 {redirect.target};
+        }}
