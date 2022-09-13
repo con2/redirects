@@ -50,11 +50,6 @@ redirects:
       - qb4.con2.fi
       - www.con2.fi
 
-  - target: https://con2.fi/concon
-    pass_path: true
-    hosts:
-      - concon.nakkikone.org
-
   - target: https://conikuvat.fi
     pass_path: true
     hosts:
