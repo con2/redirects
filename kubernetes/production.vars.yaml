@@ -35,7 +35,7 @@ redirects:
     hosts:
       - kulukorvaus.hitpoint.tracon.fi
 
-  - target: https://atlasso.tracon.fi/crowd?next=https%3A%2F%2Fjira.tracon.fi%2Fsecure%2FCreateIssue.jspa%3Fpid%3D11500%26issuetype%3D10100
+  - target: https://atlasso.tracon.fi/crowd?next=https%3A%2F%2Fjira.tracon.fi%2Fsecure%2FCreateIssue.jspa%3Fpid%3D11600%26issuetype%3D10100
     pass_path: false
     hosts:
       - kulukorvaus.tracon.fi
