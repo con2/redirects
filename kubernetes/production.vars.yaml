@@ -7,7 +7,7 @@ redirects:
       - tracon.fi
       - www.tracon.fi
 
-  - target: https://2020.hitpoint.tracon.fi
+  - target: https://2023.hitpoint.tracon.fi
     pass_path: true
     hosts:
       - hitpoint.tracon.fi
