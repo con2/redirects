@@ -89,7 +89,7 @@ redirects:
     hosts:
       - paikkaliput.tracon.fi
 
-  - target: https://kompassi.eu/events/tracon2022/programme
+  - target: https://kompassi.eu/events/tracon2023/programme
     pass_path: true
     hosts:
       - ohjelma.tracon.fi
