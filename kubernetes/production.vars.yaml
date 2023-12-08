@@ -20,7 +20,7 @@ redirects:
       - www.animecon.fi
       - www.conit.fi
 
-  - target: https://wiki.tracon.fi/collection/hitpoint-2023-WgmibvZ0M1
+  - target: https://wiki.tracon.fi/collection/hitpoint-2024-xSGNrS6PW9
     pass_path: false
     hosts:
       - wiki.hitpoint.tracon.fi
