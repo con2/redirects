@@ -103,3 +103,12 @@ redirects:
     pass_path: false
     hosts:
       - tera.tracon.fi
+
+  - target: https://rallly.con2.fi
+    pass_path: false
+    hosts:
+      - rally.con2.fi
+      - doodle.con2.fi
+      - rallly.tracon.fi
+      - rally.tracon.fi
+      - doodle.tracon.fi
