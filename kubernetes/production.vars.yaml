@@ -109,6 +109,6 @@ redirects:
     hosts:
       - rally.con2.fi
       - doodle.con2.fi
-      - rallly.tracon.fi
-      - rally.tracon.fi
-      - doodle.tracon.fi
+      # - rallly.tracon.fi
+      # - rally.tracon.fi
+      # - doodle.tracon.fi
