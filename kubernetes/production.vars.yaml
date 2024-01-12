@@ -1,7 +1,7 @@
 ingress_letsencrypt_enabled: true
 
 redirects:
-  - target: https://2023.tracon.fi
+  - target: https://2024.tracon.fi
     pass_path: true
     hosts:
       - tracon.fi
