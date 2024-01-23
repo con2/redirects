@@ -112,3 +112,8 @@ redirects:
       - rallly.tracon.fi
       - rally.tracon.fi
       - doodle.tracon.fi
+
+  - target: https://outline.con2.fi/s/735a957e-6b23-41bf-a8c6-bd5a79c460a8
+    pass_path: false
+    hosts:
+      - docs.kompassi.eu
