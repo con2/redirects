@@ -25,19 +25,11 @@ redirects:
     hosts:
       - wiki.hitpoint.tracon.fi
 
-  - target: https://jira.tracon.fi/secure/CreateIssue.jspa?pid=10302&issuetype=10100
+  - target: https://kompassi.eu/events/tracon2024/surveys/expense-claim
     pass_path: false
     hosts:
       - kulukorvaus.ry.tracon.fi
-
-  - target: https://jira.tracon.fi/secure/CreateIssue.jspa?pid=11200&issuetype=10100
-    pass_path: false
-    hosts:
       - kulukorvaus.hitpoint.tracon.fi
-
-  - target: https://jira.tracon.fi/secure/CreateIssue.jspa?pid=11600&issuetype=10100
-    pass_path: false
-    hosts:
       - kulukorvaus.tracon.fi
 
   - target: https://con2.fi
