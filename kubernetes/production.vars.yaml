@@ -25,7 +25,7 @@ redirects:
     hosts:
       - wiki.hitpoint.tracon.fi
 
-  - target: https://kompassi.eu/events/tracon2024/surveys/expense-claim
+  - target: https://v2.kompassi.eu/events/tracon2024/surveys/expense-claim
     pass_path: false
     hosts:
       - kulukorvaus.ry.tracon.fi
