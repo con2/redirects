@@ -109,3 +109,8 @@ redirects:
     pass_path: false
     hosts:
       - docs.kompassi.eu
+
+  - target: https://github.com/orgs/con2/projects
+    pass_path: false
+    hosts:
+      - backlog.kompassi.eu
