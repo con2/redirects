@@ -114,3 +114,8 @@ redirects:
     pass_path: false
     hosts:
       - backlog.kompassi.eu
+
+  - target: https://kompassi.eu/profile/reservations
+    pass_path: false
+    hosts:
+      - paikkaliput.tamperekuplii.fi
