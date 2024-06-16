@@ -81,7 +81,7 @@ redirects:
     hosts:
       - paikkaliput.tracon.fi
 
-  - target: https://kompassi.eu/events/tracon2023/programme
+  - target: https://kompassi.eu/events/tracon2024/programme
     pass_path: true
     hosts:
       - ohjelma.tracon.fi
@@ -119,3 +119,8 @@ redirects:
     pass_path: false
     hosts:
       - paikkaliput.tamperekuplii.fi
+
+  - target: https://github.com/con2/kompassi
+    pass_path: false
+    hosts:
+      - repo.kompassi.eu
