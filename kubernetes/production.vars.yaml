@@ -125,7 +125,7 @@ redirects:
     hosts:
       - repo.kompassi.eu
 
-  - target: https://ropekonsti.fi/program/list?programType=fleamarket'
+  - target: https://ropekonsti.fi/program/myprogram
     pass_path: false
     hosts:
       - kirpputori.tracon.fi
