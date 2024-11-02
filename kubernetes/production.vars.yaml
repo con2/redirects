@@ -81,7 +81,7 @@ redirects:
     hosts:
       - paikkaliput.tracon.fi
 
-  - target: https://kompassi.eu/events/tracon2024/programme
+  - target: https://2024.hitpoint.tracon.fi/ohjelma/opas
     pass_path: true
     hosts:
       - ohjelma.tracon.fi
