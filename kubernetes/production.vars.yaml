@@ -129,3 +129,8 @@ redirects:
     pass_path: false
     hosts:
       - kirpputori.tracon.fi
+
+  - target: https://v2.kompassi.eu/tracon2025/tickets
+    pass_path: false
+    hosts:
+      - liput.tracon.fi
