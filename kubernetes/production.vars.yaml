@@ -134,3 +134,8 @@ redirects:
     pass_path: false
     hosts:
       - liput.tracon.fi
+
+  - target: https://v2.kompassi.eu/tracon2025/vikailmoitus
+    pass_path: false
+    hosts:
+      - vika.tracon.fi
