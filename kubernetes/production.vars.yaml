@@ -139,3 +139,8 @@ redirects:
     pass_path: false
     hosts:
       - vika.tracon.fi
+
+  - target: https://larpit.fi
+    pass_path: true
+    hosts:
+      - www.larpit.fi
