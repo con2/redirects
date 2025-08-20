@@ -144,3 +144,13 @@ redirects:
     pass_path: true
     hosts:
       - www.larpit.fi
+
+  - target: https://github.com/con2/larpit-fi
+    pass_path: false
+    hosts:
+      - repo.larpit.fi
+
+  - target: https://github.com/orgs/con2/projects/15
+    pass_path: false
+    hosts:
+      - backlog.larpit.fi
