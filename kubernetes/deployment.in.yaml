@@ -16,7 +16,7 @@ spec:
       enableServiceLinks: false
       containers:
         - name: nginx
-          image: nginx
+          image: nginx:{nginx_version}
           securityContext:
             readOnlyRootFilesystem: true
             allowPrivilegeEscalation: false
