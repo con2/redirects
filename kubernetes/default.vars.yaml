@@ -7,10 +7,11 @@ redirects:
 
 ingress_letsencrypt_enabled: false
 
-ingress_class_name: nginx
+ingress_class_name: traefik
 ingress_annotations: !If
   test: !Var ingress_letsencrypt_enabled
   then:
     cert-manager.io/cluster-issuer: letsencrypt-prod
     # No SSL redirect: we assume targets use SSL anyway
-    # nginx.ingress.kubernetes.io/ssl-redirect: "true"
+    # (would be a shared https-redirect Middleware under Traefik - see
+    # infrastructure/kubernetes/traefik-middlewares.yaml - if this were ever wanted)
