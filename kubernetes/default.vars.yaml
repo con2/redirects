@@ -14,5 +14,3 @@ ingress_annotations: !If
     cert-manager.io/cluster-issuer: letsencrypt-prod
     # No SSL redirect: we assume targets use SSL anyway
     # nginx.ingress.kubernetes.io/ssl-redirect: "true"
-
-nginx_version: 1.31.3
