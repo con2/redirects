@@ -159,3 +159,8 @@ redirects:
     pass_path: false
     hosts:
       - info.larppikuvat.fi
+
+  - target: https://con2.github.io/components
+    pass_path: true
+    hosts:
+      - components.con2.fi
