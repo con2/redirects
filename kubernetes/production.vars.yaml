@@ -81,7 +81,7 @@ redirects:
     hosts:
       - paikkaliput.tracon.fi
 
-  - target: https://2024.hitpoint.tracon.fi/ohjelma/opas
+  - target: https://2026.tracon.fi/ohjelma/opas
     pass_path: true
     hosts:
       - ohjelma.tracon.fi
