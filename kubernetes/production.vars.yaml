@@ -50,6 +50,7 @@ redirects:
       - www.conikuvat.fi
       - www.conkuvat.fi
       - uusi.kuvat.aniki.fi
+      - uusi.conikuvat.fi
 
   - target: https://infokala.tracon.fi
     pass_path: true
@@ -69,6 +70,7 @@ redirects:
       - www.larppikuvat.fi
       - www.larpkuvat.fi
       - www.larp-kuvat.fi
+      - uusi.larppikuvat.fi
 
   - target: https://kompassi.eu
     pass_path: true
