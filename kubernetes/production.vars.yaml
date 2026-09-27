@@ -166,3 +166,8 @@ redirects:
     pass_path: true
     hosts:
       - components.con2.fi
+
+  - target: https://qb-stalker.con2.fi/mon
+    pass_path: false
+    hosts:
+      - grafana.con2.fi
