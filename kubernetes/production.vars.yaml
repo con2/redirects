@@ -1,12 +1,6 @@
 ingress_letsencrypt_enabled: true
 
 redirects:
-  - target: https://2026.tracon.fi
-    pass_path: true
-    hosts:
-      - tracon.fi
-      - www.tracon.fi
-
   - target: https://2024.hitpoint.tracon.fi
     pass_path: true
     hosts:
